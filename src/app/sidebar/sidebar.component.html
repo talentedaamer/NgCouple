@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <div class="sidebar-header d-flex">
+    <div class="app-brand d-flex align-items-center">
+      <img class="app-logo" src="{{appLogo}}" alt="{{appName}}">
+      <span class="app-name ml-1">{{appName}} <span class="app-version">{{appVersion}}</span></span>
+    </div>
+  </div>
+  <div class="sidebar-content">
+    <ul class="sidebar-nav">
+      <li *ngFor="let menuItem of menuItems" routerLinkActive="is-active"
+          [ngClass]="'sidebar-nav-item ' + menuItem.class">
+        <a class="sidebar-nav-link d-flex align-items-center py-3" [routerLink]="[menuItem.path]">
+          <i class="link-icon mr-2 {{menuItem.icon}}"></i>
+          <p>{{menuItem.title}}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

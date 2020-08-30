@@ -1,0 +1,26 @@
+@import "reset";
+
+// layout components
+@import "sidebar";
+@import "header";
+@import "main";
+@import "footer";
+
+// layouts
+@import "main-sidebar-layout";
+
+body {
+  color: #2c2c2c;
+  background-color: #edf0f2;
+  font-size: 14px;
+  font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

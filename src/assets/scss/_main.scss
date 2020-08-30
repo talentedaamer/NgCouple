@@ -1,0 +1,22 @@
+#main-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+.inner-content {
+  margin: 0 auto;
+  padding: 1.875rem 1.875rem 1px;
+  overflow-x: visible;
+  width: 100%;
+}
+
+.content {
+  .block {
+    margin-bottom: 1.875rem;
+  }
+}

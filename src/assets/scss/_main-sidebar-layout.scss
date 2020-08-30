@@ -1,0 +1,22 @@
+#app-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+  #app-wrap {
+    padding-left: 240px;
+  }
+  #header-wrap {
+    padding-left: 240px;
+  }
+  #sidebar-wrap {
+    width: 240px;
+  }
+}

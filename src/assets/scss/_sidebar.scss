@@ -1,0 +1,115 @@
+#sidebar-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1032;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-y: auto;
+  -webkit-transform: translateX(0) translateY(0) translateZ(0);
+  transform: translateX(0) translateY(0) translateZ(0);
+
+  -webkit-overflow-scrolling: touch;
+  will-change: transform;
+
+  .sidebar-header {
+    color: #343a40;
+    padding: 1rem 1.25rem;
+    height: 4.625rem;
+    .app-brand {
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+      color: #343a40;
+
+      .app-logo {
+        max-height: 32px;
+      }
+      .app-name {
+        .app-version {
+          font-size: 80%;
+        }
+      }
+    }
+  }
+
+  .sidebar-nav {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    .sidebar-nav-item {
+      .sidebar-nav-link {
+        display: block;
+        padding: .5rem 1.25rem;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        color: #343a40;
+        font-weight: 300;
+        text-transform: uppercase;
+        &:hover {
+          color: #000000;
+          background-color: rgba(0,0,0,0.05);
+          .link-icon {
+            color: #000000;
+          }
+        }
+      }
+      &.is-active {
+        .sidebar-nav-link {
+          color: #000000;
+          background-color: rgba(0,0,0,0.05);
+          &:hover {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  &.sidebar-dark {
+    color: #e9ecef;
+    background-color: #272e38;
+
+    .sidebar-header {
+      color: #ffffff;
+      .app-brand {
+        color: #ffffff;
+      }
+    }
+
+    .sidebar-nav {
+      .sidebar-nav-item {
+        .sidebar-nav-link {
+          color: rgba(255,255,255,.5);
+          &:hover {
+            color: rgba(255,255,255,.5);
+            background-color: rgba(0,0,0,.2);
+            .link-icon {
+              color: #ffffff;
+            }
+          }
+        }
+        &.is-active {
+          .sidebar-nav-link {
+            color: #ffffff;
+            background-color: rgba(0,0,0,.2);
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .sidebar-content {
+    padding: 1.25rem 1.25rem 1px;
+  }
+
+
+}
