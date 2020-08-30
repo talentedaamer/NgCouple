@@ -1,7 +1,7 @@
 # NgCouple
 
 ### Screenshots
-![Dashboard Page Blank](https://github.com/talentedaamer/NgCouple/master/screenshots/NgCouple-01.JPG)
+![Dashboard Page Blank](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-01.JPG)
 
 ### Demo & Develope
 1. Clone the repo `git clone https://github.com/talentedaamer/NgCouple.git`.
