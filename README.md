@@ -1,14 +1,16 @@
-# AngularBootstrapDashboard
+# NgCouple
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+### Demo & Develope
+1. Clone the repo `git clone https://github.com/talentedaamer/NgCouple.git`.
+2. Run `npm install` to install the dependencies.
+3. Run `ng serve -o --port=4455` or `npm start` to serve the application
+4. Application will be served over `http://localhost:4455/`
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Creating Dashboard Page
+1. Run `ng g c pages/test-page` to create a component in app/pages.
+2. Make sure that it is added into the `declarations` array of `admin-layout.module.ts` file
+3. Make sure to add a new route in `admin-layout.routing.ts` routing file.
+4. Stop the application and serve again to see the changes.
 
 ## Build
 

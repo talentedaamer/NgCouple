@@ -1,9 +1,9 @@
 {
-  "name": "angular-bootstrap-dashboard",
-  "version": "0.0.0",
+  "name": "NgCouple",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o --port=4400",
+    "start": "ng serve -o --port=4455",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
