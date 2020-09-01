@@ -10,6 +10,12 @@ import { AdminLayoutRoutes } from './admin-layout.routing';
 // components
 import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 import { TypographyComponent } from '../../pages/typography/typography.component';
+import { GridsComponent } from '../../pages/grids/grids.component';
+import { TablesComponent } from '../../pages/tables/tables.component';
+import { IconsComponent } from '../../pages/icons/icons.component';
+import { ChartsComponent } from '../../pages/charts/charts.component';
+import { FormsComponent } from '../../pages/forms/forms.component';
+import { NotFoundComponent } from '../../pages/not-found/not-found.component';
 
 @NgModule({
   imports: [
@@ -19,7 +25,13 @@ import { TypographyComponent } from '../../pages/typography/typography.component
   ],
   declarations: [
     DashboardComponent,
-    TypographyComponent
+    TypographyComponent,
+    GridsComponent,
+    TablesComponent,
+    IconsComponent,
+    ChartsComponent,
+    FormsComponent,
+    NotFoundComponent
   ]
 })
 export class AdminLayoutModule { }

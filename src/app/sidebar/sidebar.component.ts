@@ -47,20 +47,14 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
-    path: '/login',
-    title: 'Login',
-    icon: 'icon-logout',
-    class: ''
-  },
-  {
-    path: '/register',
-    title: 'Register',
-    icon: 'icon-login',
+    path: '/forms',
+    title: 'Forms',
+    icon: 'icon-folder',
     class: ''
   },
   {
     path: '/404',
-    title: '404 Not Found',
+    title: '404',
     icon: 'icon-ban',
     class: ''
   }

@@ -12,6 +12,7 @@
 ## Creating Dashboard Page
 1. Run `ng g c pages/test-page` to create a component in app/pages.
 2. Make sure that it is added into the `declarations` array of `admin-layout.module.ts` file
+    a. or run this command directly to do step 1 & 2 `ng g c pages/test-page --module=layouts/admin-layout`
 3. Make sure to add a new route in `admin-layout.routing.ts` routing file.
 4. Stop the application and serve again to see the changes.
 
