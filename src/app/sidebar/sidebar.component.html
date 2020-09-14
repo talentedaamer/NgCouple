@@ -6,12 +6,12 @@
     </div>
   </div>
   <div class="sidebar-content">
-    <ul class="sidebar-nav">
+    <ul class="sidebar-nav list-unstyled">
       <li *ngFor="let menuItem of menuItems" routerLinkActive="is-active"
           [ngClass]="'sidebar-nav-item ' + menuItem.class">
         <a class="sidebar-nav-link d-flex align-items-center py-3" [routerLink]="[menuItem.path]">
           <i class="link-icon mr-2 {{menuItem.icon}}"></i>
-          <p>{{menuItem.title}}</p>
+          <p class="mb-0">{{menuItem.title}}</p>
         </a>
       </li>
     </ul>

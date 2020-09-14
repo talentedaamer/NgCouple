@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public displaySidebar = false;2
 
+  @Output() onSidebarToggle
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleSidebar(): void {
+
+  }
 }

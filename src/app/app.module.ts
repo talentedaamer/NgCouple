@@ -11,20 +11,21 @@ import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AdminLayoutComponent
-  ],
-  imports: [
-    BrowserAnimationsModule,
-    RouterModule.forRoot(AppRoutes, {
-      useHash: true
-    }),
-    SidebarModule,
-    HeaderModule,
-    FooterModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AdminLayoutComponent
+    ],
+    imports: [
+        BrowserAnimationsModule,
+        RouterModule.forRoot(AppRoutes, {
+            useHash: true
+        }),
+        SidebarModule,
+        HeaderModule,
+        FooterModule
+    ],
+    providers: [],
+    exports: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

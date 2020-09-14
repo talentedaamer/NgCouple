@@ -17,6 +17,10 @@ import { ChartsComponent } from '../../pages/charts/charts.component';
 import { FormsComponent } from '../../pages/forms/forms.component';
 import { NotFoundComponent } from '../../pages/not-found/not-found.component';
 
+// reusable components
+import { PageHeaderComponent } from '../../components/page-header/page-header.component';
+import { CardComponent } from '../../components/card/card.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -31,7 +35,10 @@ import { NotFoundComponent } from '../../pages/not-found/not-found.component';
     IconsComponent,
     ChartsComponent,
     FormsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    // reusable components
+    PageHeaderComponent,
+    CardComponent
   ]
 })
 export class AdminLayoutModule { }

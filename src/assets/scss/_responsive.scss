@@ -1,0 +1,22 @@
+@media (max-width: 991.98px) {
+  #sidebar-wrap.sidebar-open {
+    //-webkit-transform: translateX(0) translateY(0) translateZ(0);
+    //transform: translateX(0) translateY(0) translateZ(0);
+  }
+}
+
+@media (min-width: 992px) {
+  #app-wrap {
+    padding-left: 240px;
+  }
+  #header-wrap {
+    padding-left: 240px;
+  }
+  #sidebar-wrap {
+    &.sidebar-open {
+      width: 240px;
+      -webkit-transform: translateX(0) translateY(0) translateZ(0);
+      transform: translateX(0) translateY(0) translateZ(0);
+    }
+  }
+}
