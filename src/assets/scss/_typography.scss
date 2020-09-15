@@ -1,3 +1,52 @@
+/* elements */
+blockquote {
+  //background: #f9f9f9;
+  //padding: 1em .5em;
+  //&:before {
+  //  color: #ccc;
+  //  content: open-quote;
+  //  font-size: 4em;
+  //  line-height: 0.1em;
+  //  margin-right: 0.25em;
+  //  vertical-align: -0.4em;
+  //}
+  //& p {
+  //  display: inline;
+  //}
+}
+
+blockquote {
+  border-left: 3px solid #ccc;
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.8em;
+  padding: 1em 2em;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    height: 2em;
+    background-color: #fff;
+    width: 5px;
+    margin-top: -1em;
+  }
+  &:after {
+    content: open-quote;
+    position: absolute;
+    top: 50%;
+    left: -0.5em;
+    font-style: normal;
+    text-align: center;
+    width: 1em;
+    margin-top: -0.5em;
+    font-size: 2em;
+    display: inline-block;
+    line-height: 1.5;
+  }
+}
+
 /* font-weights */
 .fw-300 {
   font-weight: 300;
