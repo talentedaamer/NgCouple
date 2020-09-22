@@ -53,6 +53,12 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
+    path: '/components',
+    title: 'Components',
+    icon: 'icon-layers',
+    class: ''
+  },
+  {
     path: '/404',
     title: '404',
     icon: 'icon-ban',

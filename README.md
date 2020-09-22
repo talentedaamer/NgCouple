@@ -1,7 +1,12 @@
 # NgCouple
 
 ### Screenshots
-![Dashboard Page Blank](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-01.JPG)
+![Dashboard](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-01.png)
+![Typography](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-02.png)
+![Grids](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-03.png)
+![Tables](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-04.png)
+![Icons](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-05.png)
+![Components](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-06.png)
 
 ### Demo & Develope
 1. Clone the repo `git clone https://github.com/talentedaamer/NgCouple.git`.

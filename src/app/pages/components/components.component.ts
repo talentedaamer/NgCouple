@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-components',
+  templateUrl: './components.component.html',
+  styleUrls: ['./components.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class ComponentsComponent implements OnInit {
   public cardLink: any;
 
   constructor() { }
@@ -13,5 +13,4 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.cardLink = { link: '/', text: 'View More' };
   }
-
 }

@@ -1,0 +1,18 @@
+<div class="ngc-card-icon block d-flex flex-column bg-white rounded">
+  <h5 *ngIf="title" class="card-title bg-light text-uppercase fw-400 m-0 px-4 py-3">{{ title }}</h5>
+  <div class="d-flex flex-grow-1 justify-content-between align-items-center p-sm-3 p-md-3 p-lg-4">
+    <dl class="mb-0">
+      <dt class="h2 font-weight-bold">{{ heading }}</dt>
+      <dd class="text-muted mb-0">{{ subHeading }}</dd>
+    </dl>
+    <div class="icon icon-4 rounded bg-light" *ngIf="hasIcon">
+      <i class="text-primary h3 mb-0 {{ icon }}"></i>
+    </div>
+  </div>
+  <div class="border-top px-sm-3 px-md-3 px-lg-4 py-sm-2 py-md-3" *ngIf="hasLink">
+    <a class="d-flex align-items-center" [routerLink]="link.link">
+      {{ link.text }}
+      <i class="icon-arrow-right-circle ml-1"></i>
+    </a>
+  </div>
+</div>

@@ -8,6 +8,7 @@ import { IconsComponent } from '../../pages/icons/icons.component';
 import { ChartsComponent } from '../../pages/charts/charts.component';
 import { FormsComponent } from '../../pages/forms/forms.component';
 import { NotFoundComponent } from '../../pages/not-found/not-found.component';
+import { ComponentsComponent } from '../../pages/components/components.component';
 
 export const AdminLayoutRoutes: Routes = [
   {
@@ -37,6 +38,10 @@ export const AdminLayoutRoutes: Routes = [
   {
     path: 'forms',
     component: FormsComponent
+  },
+  {
+    path: 'components',
+    component: ComponentsComponent
   },
   {
     path: '404',

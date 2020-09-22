@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -6,9 +6,6 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
   @Input() title: string;
-
-  ngOnInit(): void {
-  }
 }

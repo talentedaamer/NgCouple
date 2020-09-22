@@ -15,11 +15,14 @@ import { TablesComponent } from '../../pages/tables/tables.component';
 import { IconsComponent } from '../../pages/icons/icons.component';
 import { ChartsComponent } from '../../pages/charts/charts.component';
 import { FormsComponent } from '../../pages/forms/forms.component';
+import { ComponentsComponent } from '../../pages/components/components.component';
 import { NotFoundComponent } from '../../pages/not-found/not-found.component';
 
 // reusable components
 import { PageHeaderComponent } from '../../components/page-header/page-header.component';
 import { CardComponent } from '../../components/card/card.component';
+import { CardIconComponent } from '../../components/card-icon/card-icon.component';
+import { CardSimpleComponent } from '../../components/card-simple/card-simple.component';
 
 @NgModule({
   imports: [
@@ -35,10 +38,13 @@ import { CardComponent } from '../../components/card/card.component';
     IconsComponent,
     ChartsComponent,
     FormsComponent,
+    ComponentsComponent,
     NotFoundComponent,
     // reusable components
     PageHeaderComponent,
-    CardComponent
+    CardComponent,
+    CardIconComponent,
+    CardSimpleComponent
   ]
 })
 export class AdminLayoutModule { }

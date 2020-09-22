@@ -1,0 +1,22 @@
+.ngc-card-icon {
+  .card-title {
+    font-size: 1em;
+  }
+  .icon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    transition: opacity .25s ease-out,-webkit-transform .25s ease-out;
+    transition: opacity .25s ease-out,transform .25s ease-out;
+    transition: opacity .25s ease-out,transform .25s ease-out,-webkit-transform .25s ease-out;
+
+    &.icon-4 {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
