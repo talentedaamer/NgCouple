@@ -1,14 +1,6 @@
 # NgCouple
 
-### Screenshots
-![Dashboard](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-01.png)
-![Typography](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-02.png)
-![Grids](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-03.png)
-![Tables](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-04.png)
-![Icons](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-05.png)
-![Components](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-06.png)
-
-### Demo & Develope
+### Demo & Develope <a href="https://ngcouple-4ae2b.web.app/">View Demo</a>
 1. Clone the repo `git clone https://github.com/talentedaamer/NgCouple.git`.
 2. Run `npm install` to install the dependencies.
 3. Run `ng serve -o --port=4455` or `npm start` to serve the application
@@ -20,6 +12,15 @@
     a. or run this command directly to do step 1 & 2 `ng g c pages/test-page --module=layouts/admin-layout`
 3. Make sure to add a new route in `admin-layout.routing.ts` routing file.
 4. Stop the application and serve again to see the changes.
+
+
+### Screenshots
+![Dashboard](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-01.png)
+![Typography](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-02.png)
+![Grids](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-03.png)
+![Tables](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-04.png)
+![Icons](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-05.png)
+![Components](https://raw.githubusercontent.com/talentedaamer/NgCouple/master/screenshots/NgCouple-06.png)
 
 ## Build
 
