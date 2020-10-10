@@ -9,16 +9,18 @@
 
       <div class="mb-4">
         <div class="input-group input-group-lg">
+          <form class="w-100" [formGroup]="iconsForm">
           <input
+            formControlName="searchIconInput"
             type="text"
             placeholder="Search Icon"
-            class="form-control form-control-alt"
-            (keyup)="filterIcons($event)">
+            class="form-control form-control-alt">
+          </form>
         </div>
       </div>
 
       <div class="icons-list row row-cols-4">
-        <div class="col text-center mb-4" *ngFor="let icon of icons">
+        <div class="col text-center mb-4" *ngFor="let icon of icons | listSearch:searchText">
           <span class="ngc-icon bg-light d-block p-3">
             <i class="text-primary" class="{{icon}}"></i>
             <code class="d-block mt-3">{{ icon }}</code>

@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 // routes
 import { AdminLayoutRoutes } from './admin-layout.routing';
@@ -23,12 +23,15 @@ import { PageHeaderComponent } from '../../components/page-header/page-header.co
 import { CardComponent } from '../../components/card/card.component';
 import { CardIconComponent } from '../../components/card-icon/card-icon.component';
 import { CardSimpleComponent } from '../../components/card-simple/card-simple.component';
+// pipes
+import { ListSearchPipe } from '../../pipes/list-search.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,
@@ -44,7 +47,9 @@ import { CardSimpleComponent } from '../../components/card-simple/card-simple.co
     PageHeaderComponent,
     CardComponent,
     CardIconComponent,
-    CardSimpleComponent
+    CardSimpleComponent,
+    // pipes
+    ListSearchPipe
   ]
 })
 export class AdminLayoutModule { }

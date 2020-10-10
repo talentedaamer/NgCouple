@@ -1,6 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {DataService} from '../../services/data.service';
 import {Subscription} from 'rxjs';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {distinctUntilChanged} from 'rxjs/operators';
 
 @Component({
   selector: 'app-icons',
@@ -8,9 +10,20 @@ import {Subscription} from 'rxjs';
   styleUrls: ['./icons.component.scss']
 })
 export class IconsComponent implements OnInit, OnDestroy {
-  subscription: Subscription;
+  private loadIconsSubscription: Subscription;
   public loading = false;
-  public icons: string[];
+  public icons: string[] = [];
+  public iconsForm: FormGroup = new FormGroup({
+    searchIconInput: new FormControl(
+      '',
+      [
+        Validators.required,
+        Validators.minLength(3)
+      ]
+    )
+  });
+  private iconsFilterSubscription: Subscription;
+  public searchText = '';
 
   constructor(
     private dataService: DataService
@@ -18,20 +31,26 @@ export class IconsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.loading = true;
-    this.subscription = this.dataService.getIcons().subscribe( (icons: string[]) => {
-      this.icons = icons;
-      // console.log('>> getIcons', icons );
-    });
-  }
+    this.loadIconsSubscription = this.dataService.getIcons()
+      .subscribe(
+        (icons: string[]) => {
+          this.icons = icons;
+        }
+      );
 
-  filterIcons($event): void {
-    // this.icons = this.icons.filter( icon => {
-    //   return icon == $event.target.value;
-    // });
-    // console.log('>> filter icons', $event.target.value);
+    this.iconsFilterSubscription = this.iconsForm.get('searchIconInput')
+      .valueChanges
+      .pipe(
+        distinctUntilChanged()
+      )
+      .subscribe( value => {
+        this.searchText = value.toLowerCase();
+      });
   }
-
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    this.loadIconsSubscription.unsubscribe();
+    this.iconsFilterSubscription.unsubscribe();
   }
 }
+
+
